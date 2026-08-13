@@ -1,0 +1,35 @@
+{
+  "name": "genpark-agentic-developer-environment-orchestrator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Agentic development environment orchestrator with automated PR review & code staging.",
+  "author": "genpark",
+  "category": "developer",
+  "tags": [
+    "agentic-dev-environment",
+    "pr-review-agent",
+    "code-staging",
+    "dev-orchestrator",
+    "ph-august13"
+  ],
+  "inputs": {
+    "pr_branch_name": {
+      "type": "string"
+    },
+    "repository_name": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "review_status": {
+      "type": "string"
+    },
+    "automated_tests_passed": {
+      "type": "boolean"
+    },
+    "staging_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
